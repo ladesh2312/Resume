@@ -32,7 +32,7 @@ test("all built links and assets resolve", async () => {
       await access(new URL(`../dist${url}`, import.meta.url));
     }
   }
-  assert.ok(html.includes("mailto:qatest2312@gmail.com"));
+  assert.ok(html.includes("mailto:lades.ado@gmail.com"));
 });
 
 test("the résumé download is preserved byte-for-byte through the build", async () => {

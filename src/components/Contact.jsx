@@ -19,8 +19,8 @@ export default function Contact() {
           </p>
         </div>
         <div className="contact-actions mt-[33px] flex flex-col items-start gap-[22px] tablet:mt-0 tablet:gap-6">
-          <a className="email-link" href="mailto:qatest2312@gmail.com">
-            qatest2312@gmail.com <span aria-hidden="true">↗</span>
+          <a className="email-link" href="mailto:lades.ado@gmail.com">
+            lades.ado@gmail.com <span aria-hidden="true">↗</span>
           </a>
           <a
             className="text-link inline-flex items-center gap-3 text-xs font-[650] underline decoration-[#a5b3c8] underline-offset-[5px] tablet:text-[13px]"
