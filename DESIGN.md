@@ -97,7 +97,7 @@ The existing direction favors this editorial treatment over a photo-led composit
 
 ## Colors
 
-A cool, quiet palette gives career content room while blue identifies actions and the testing signature. Runtime custom properties in `dist/style.css` own the seven core colors; frontmatter records their current values.
+A cool, quiet palette gives career content room while blue identifies actions and the testing signature. Tailwind theme tokens in `src/styles.css` own the seven core colors; frontmatter records their current values. React components use Tailwind utilities for responsive layout, spacing, surfaces, and shared controls. The component layer retains the coverage diagram and detailed typography. The React migration preserves the established visual identity.
 
 ### Primary
 - **Blue:** primary action, focus outlines, hero emphasis, diagram icons and featured-work surface.

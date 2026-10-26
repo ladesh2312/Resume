@@ -14,7 +14,7 @@ User supplied Resume_Lades.pdf. All career details, tools, education and languag
 Responsive single page: introduction, about, selected work, experience, skills, education, contact and original résumé download. Use professional email; omit phone from the page. No contact backend or analytics. New Sites hosting stays private.
 
 ## Stack
-Implementation choice: buildless semantic HTML, CSS and small progressive enhancement JavaScript. User instructed execution of the previously supplied website prompt; stack was not separately specified.
+User requested React and Tailwind CSS. React components render the page; Tailwind CSS v4 supplies responsive layout and shared styling utilities. Vite builds static assets, and React server rendering pre-renders the full page before browser hydration. Career data is maintained separately in src/data/experience.js.
 
 ## Open details
 No portrait, LinkedIn, GitHub or public project URLs supplied. No certifications supplied. Current employment reflects the résumé and has not been independently verified.

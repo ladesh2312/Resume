@@ -1,21 +1,39 @@
 # Lades Hutabarat portfolio
 
-Responsive, buildless personal website sourced from the user-supplied résumé.
+Personal website built with **React 19, Tailwind CSS 4, and Vite 7**, preserving the existing design and résumé content.
 
-## Edit
-Update copy in `dist/index.html`, styling in `dist/style.css`, and the original résumé in `dist/assets/Resume_Lades.pdf`. The email link uses qatest2312@gmail.com. Earlier roles use native HTML details/summary, so they work without JavaScript. The only script updates the footer year.
+## Run locally
 
-## Preview
-Run `python3 -m http.server 4173 --bind 127.0.0.1 --directory dist` from this folder and visit http://127.0.0.1:4173.
+```sh
+npm ci
+npm run dev
+```
 
-## Assets
-Manrope is self-hosted under its SIL Open Font License, included in assets/manrope-license.txt. The favicon and coverage diagram use native vector geometry and CSS. No stock photos or generated portraits.
+Open http://127.0.0.1:4173. Node.js 20.19+ or 22.12+ is required.
 
-## Verification
-Checked layouts at 1440, 433, 390 and 320 CSS pixels without horizontal overflow. Confirmed the earlier-experience disclosure expands, all local links and assets resolve, the font loads, and the downloadable PDF is byte-identical to the source. Visual reviewer: ship. The optional design detector was unavailable because its runtime cache could not be initialized.
+## Build and verify
 
-## Missing optional inputs
-No portrait, LinkedIn, GitHub or public project URLs were supplied. These are omitted. Employment marked present follows the supplied résumé.
+```sh
+npm run build
+npm test
+npm run preview
+```
 
-## Hosting
-Site identity is retained in `.openai/hosting.json`; static output is `dist/`. Access begins owner-private. No analytics or backend integrations.
+Vite compiles React and Tailwind into `dist/`. The build renders the complete page to HTML with React, then hydrates it in the browser. Content and the native experience disclosure remain usable before JavaScript loads. Tests verify pre-rendered career content, asset and anchor integrity, and preservation of the résumé download.
+
+## Edit content
+
+- `src/App.jsx`: page composition.
+- `src/components/`: page sections and reusable tags and career roles.
+- `src/data/experience.js`: career timeline data.
+- `src/styles.css`: Tailwind theme tokens, detailed typography, and coverage diagram.
+- `public/assets/`: résumé, self-hosted font and license, and favicon.
+- `index.html`: title, description and social metadata.
+
+Keep factual changes aligned with the supplied résumé. No portrait, social profile URLs, public project URLs, or certifications were supplied, so these remain omitted.
+
+## Deployment
+
+The existing Site identity is retained in `.openai/hosting.json`, with static output in `dist/`. The hosted audience remains owner-private. No analytics or backend integrations are included.
+
+Manrope is self-hosted under the included SIL Open Font License. Icons and diagrams are native vectors and CSS.
